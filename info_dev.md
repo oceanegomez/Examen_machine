@@ -22,3 +22,11 @@ En tant que futurs ingénieurs, nous devons donc prendre l'entière responsabili
 ###### Lien du dépôt git distant 
 [dépôt git](https://github.com/oceanegomez/Examen_machine.git)
 
+---
+
+## La directive #pragma once
+
+Qu'est-ce que le #pragma once ? 
+C'est une directive qui permets aux langages comme C et C++ d'inclure une seule fois le fichier qui contient le #pragma once dans une seule compilation. 
+
+Cette directive a plusieurs utilités notamment moins de code à écrire, on évite des conflits et on améliore la vitesse de compilation. 
