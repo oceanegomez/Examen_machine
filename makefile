@@ -76,3 +76,19 @@ $(BUILD)/bench_test02 : $(BUILD)/bench_test02.o $(LIB_DIR)/liste-c.o
 
 bench_test02 : $(BUILD)/bench_test02
 	./$(BUILD)/bench_test02
+
+
+#liste-c
+
+listec: $(BUILD)/liste-c
+
+$(BUILD)/liste-c.o : $(SRC)/liste-c.c 
+	@echo '=== Compilation liste-c.o ==='
+	gcc -I $(SRC) -c -Wall $(SRC)/liste-c.c -o $(BUILD)/liste-c.o
+
+$(BUILD)/liste-c : $(BUILD)/liste-c.o 
+	@echo '=== compilation finale liste-c ==='
+	gcc -Wall $(BUILD)/liste-c.o -o $(BUILD)/liste-c
+
+runliste : $(BUILD)/liste-c
+	./$(BUILD)/liste-c
