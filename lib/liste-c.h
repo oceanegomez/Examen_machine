@@ -1,7 +1,7 @@
 #pragma once
 #include <stdlib.h>
 
-char* versionLC();
+char* versionLC(void);
 
 struct st_listeC;
 typedef struct st_listeC * ListeC;
