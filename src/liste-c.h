@@ -3,7 +3,7 @@
 
 char* versionLC(void); // version de la librairie 
 
-struct st_listeC;    
+struct st_listeC;     // La liste elle-même
 typedef struct st_listeC * ListeC;
 
 ListeC createLC();		// Crée une liste			
